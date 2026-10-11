@@ -15,7 +15,9 @@ body {
     font-family: Open Sans;
     font-size: 16px;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-weight: 400;
 }
 
@@ -31,18 +33,29 @@ body {
     border: 1px solid #FF5049 !important;
 }
 
+.cabecero,
+.pie-pagina {
+    color: #fff;
+    background: url(fondo.png), #7b4397;
+    background: url(fondo.png), -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
+    background: url(fondo.png), linear-gradient(to left, #7b4397, #dc2430);
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-position: center;
+}
+
 .cabecero {
     height: 40vh;
-    background-size: cover;
-    background-position: center;
     position: relative;
     width: 100%;
     padding-top: 150px;
     padding-bottom: 100px;
-    color: #fff;
-    background: url(fondo.png), #7b4397;
-    background: url(fondo.png), -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
-    background: url(fondo.png), linear-gradient(to left, #7b4397, #dc2430)
+}
+
+.pie-pagina {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
 }
 
 .presupuesto {
